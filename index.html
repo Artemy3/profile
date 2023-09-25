@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Шугубаев Артемий</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="/slick/slick/slick.css" />
+   <link rel="stylesheet" type="text/css" href="/slick/slick/slick-theme.css" />
+   <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <div class="mail">
+               <img class="mail__img" src="/images/logo-mail-footer.png" alt="">
+               <a class="mail__link" href="mailto:teamsik1804@mail.ru">Напишите мне</a>
+            </div>
+            <div class="phone">
+               <img class="phone__img" src="/images/logo-tel-footer.png" alt="">
+               <a class="phone__link" href="tel:+79227418784">8-922-741-87-84</a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="main">
+      <section class="title">
+         <div class="container">
+            <h1 class="name">Шугубаев Артемий Владиславович</h1>
+         </div>
+      </section>
+      <section class="about">
+         <div class="container">
+            <p class="about__inner">
+               Добрый день! Меня зовут Артемий. Мне 29 лет. Я долгое <span id="dots">...</span> <span id="more">
+                  время работал менеджером по продажам, но решил полностью сменить род деятельности и стал обучаться
+                  Frontend-разработке и уже на начальных стадиях обучения стал понимать, что очень нравиться разработка
+                  и я
+                  хочу развиваться именно в этом направлении. На данный момент имею опыт разработки приложений, верстки
+                  лэндингов, адаптивной верстки, а так же работы в команде.
+                  Мои навыки: HTML, CSS, JS, SASS, SCSS, GIT, БЭМ, работа с Figma
+                  Так же я ответвсвенный и обучаемый. <br> <a href="https://github.com/Artemy3"> Ссылка на мой Git <img
+                        class="git__img" src="/images/git.png" alt=""></a>
+               </span>
+            </p>
+            <button id="btn" onclick="readMore()">Подробнее</button>
+         </div>
+      </section>
+      <section class="galary">
+         <div class="container__slick">
+            <div class="slick">
+               <div class="slick__slider">
+                  <img class="slick__img" src="/images/slick1.jpeg" alt="">
+                  <img class="slick__img" src="/images/slick2.jpg" alt="">
+                  <img class="slick__img" src="/images/slick3.jpg" alt="">
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="/slick/slick/slick.min.js"></script>
+
+   <script>
+
+      $('.slick__slider').slick({
+
+      });
+
+
+      function readMore() {
+         let dots = document.getElementById("dots");
+         let more = document.getElementById("more");
+         let btn = document.getElementById("btn");
+
+         if (dots.style.display === "none") {
+            dots.style.display = "inline"
+            btn.innerHTML = "Подробнее";
+            more.style.display = "none";
+         } else {
+            dots.style.display = "none";
+            btn.innerHTML = "Скрыть"; more.style.display = "inline";
+         }
+      }
+
+   </script>
+
+</body>
+
+</html>

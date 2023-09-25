@@ -1,0 +1,85 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+li {
+   list-style: none;
+}
+
+.container {
+   max-width: 1120px;
+   padding: 10px;
+   margin: 0 auto;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: teal;
+   color: white;
+}
+
+
+.header {
+   margin-bottom: 25px;
+}
+
+
+
+.header__inner {
+   display: flex;
+   justify-content: end;
+   gap: 0 40px;
+}
+
+.mail {
+   display: flex;
+   align-items: center;
+   gap: 0 8px;
+}
+
+.phone {
+   display: flex;
+   align-items: center;
+   gap: 0 8px;
+}
+
+.name {
+   text-align: right;
+   font-size: 35px;
+}
+
+.container__slick {
+   max-width: 600px;
+   max-height: 600px;
+   padding: 10px;
+   margin: 0 auto;
+}
+
+
+#more {
+   display: none;
+}
+
+#btn {
+   border-radius: 5px;
+   border-color: white;
+}
+
+.git__img {
+   width: 1%;
+}
+
+.git__link {
+   text-align: center;
+}
